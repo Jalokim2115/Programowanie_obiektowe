@@ -43,4 +43,10 @@ public class CalculatorTest {
 		sut.divide(0);
 		assertEquals("1/0 = 1", "Nie dziel przez 0!", sut.x);
 	}
+	@Test
+	public void testfactorial(){
+		Calculator sut = new Calculator();
+		long wynik =sut.factorial(0);
+		assertEquals("silnia z 0 to 1", 1, wynik);
+	}
 }
